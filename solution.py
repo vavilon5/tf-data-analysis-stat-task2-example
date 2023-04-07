@@ -13,5 +13,5 @@ def solution(p: float, x: np.array) -> tuple:
     alpha = 1 - p
     maxi = x.max()
     lmbda = 0.056
-    return maxi/2, \
-            ((((maxi - lmbda)/(lmbda**(1/len(x)))) + lmbda)/2)
+    return maxi, \
+            ((((maxi - lmbda)/(lmbda**(1/len(x)))) + lmbda))
